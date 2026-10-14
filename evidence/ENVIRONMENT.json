@@ -1,0 +1,9 @@
+{
+  "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "numpy": "2.5.2",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "python_setup": "New virtual environment; requirements installed from package index; exact frozen numerical replay passed.",
+  "lean": "leanprover/lean4:v4.33.1",
+  "lean_dependency_setup": "Independent copy of manifest-matched local dependency sources and compiled cache; no prior project build artifacts."
+}

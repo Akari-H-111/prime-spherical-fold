@@ -1,0 +1,912 @@
+{
+  "scope": "Exact symbolic model checks and numerical diagnostics; not a proof of prime equidistribution or infinite prime approximation.",
+  "environment": {
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "numpy": "2.5.2",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "exact_symbolic_checks": 10,
+  "independent_trial_division_checks": 10001,
+  "exact_sieve_cutoff": 1000000,
+  "exact_prime_count": 78498,
+  "diagnostics": [
+    {
+      "sample": "primes",
+      "cutoff": 10000,
+      "sample_size": 1229,
+      "numerical_star_discrepancy": 0.010698827690893531,
+      "fold_cdf": [
+        {
+          "epsilon": 0.0001,
+          "observed": 0.006509357200976403,
+          "limiting_mass": 0.006366303831746142,
+          "error": 0.00014305336923026157
+        },
+        {
+          "epsilon": 0.001,
+          "observed": 0.022782750203417412,
+          "limiting_mass": 0.020135041633377492,
+          "error": 0.00264770857003992
+        },
+        {
+          "epsilon": 0.01,
+          "observed": 0.06834825061025224,
+          "limiting_mass": 0.06376856085851985,
+          "error": 0.004579689751732383
+        },
+        {
+          "epsilon": 0.1,
+          "observed": 0.20260374288039057,
+          "limiting_mass": 0.20483276469913345,
+          "error": -0.0022290218187428767
+        },
+        {
+          "epsilon": 0.25,
+          "observed": 0.33767290480065093,
+          "limiting_mass": 0.3333333333333333,
+          "error": 0.0043395714673176156
+        },
+        {
+          "epsilon": 0.5,
+          "observed": 0.4955248169243287,
+          "limiting_mass": 0.5000000000000001,
+          "error": -0.004475183075671407
+        },
+        {
+          "epsilon": 0.9,
+          "observed": 0.8079739625711961,
+          "limiting_mass": 0.7951672353008666,
+          "error": 0.012806727270329499
+        }
+      ],
+      "double_line_tubes": [
+        {
+          "delta": 0.01,
+          "observed": 0.008136696501220505,
+          "limiting_mass": 0.004501619094809442
+        },
+        {
+          "delta": 0.05,
+          "observed": 0.022782750203417412,
+          "limiting_mass": 0.0225125996910173
+        },
+        {
+          "delta": 0.1,
+          "observed": 0.043938161106590726,
+          "limiting_mass": 0.0450534136444121
+        },
+        {
+          "delta": 0.25,
+          "observed": 0.10903173311635476,
+          "limiting_mass": 0.11313408225732115
+        }
+      ],
+      "filling_tail": [
+        {
+          "threshold": 1,
+          "observed": 0.33767290480065093,
+          "limiting_tail": 0.3333333333333333
+        },
+        {
+          "threshold": 2,
+          "observed": 0.16680227827502034,
+          "limiting_tail": 0.16086124651033248
+        },
+        {
+          "threshold": 10,
+          "observed": 0.030105777054515868,
+          "limiting_tail": 0.03184426647332069
+        },
+        {
+          "threshold": 100,
+          "observed": 0.0,
+          "limiting_tail": 0.0031831121248990413
+        }
+      ],
+      "empirical_cost_mean": 2.0850739296304104,
+      "truncated_cost_means": {
+        "2": 0.9779629064811373,
+        "10": 1.5195111123101523,
+        "100": 2.0850739296304104
+      },
+      "max_radius_recovery_error": 1.8189894035458565e-12,
+      "finite_diophantine_witnesses": [
+        {
+          "epsilon": 0.01,
+          "tau": 0.3233333333333333,
+          "finite_witnesses": 204
+        },
+        {
+          "epsilon": 0.05,
+          "tau": 0.2833333333333333,
+          "finite_witnesses": 277
+        },
+        {
+          "epsilon": 0.1,
+          "tau": 0.2333333333333333,
+          "finite_witnesses": 384
+        }
+      ],
+      "smallest_fold_height_index": 7433,
+      "smallest_fold_height": 6.754047028570396e-05
+    },
+    {
+      "sample": "all_positive_integers_control",
+      "cutoff": 10000,
+      "sample_size": 10000,
+      "numerical_star_discrepancy": 0.0015283981492244525,
+      "fold_cdf": [
+        {
+          "epsilon": 0.0001,
+          "observed": 0.0085,
+          "limiting_mass": 0.006366303831746142,
+          "error": 0.002133696168253859
+        },
+        {
+          "epsilon": 0.001,
+          "observed": 0.0198,
+          "limiting_mass": 0.020135041633377492,
+          "error": -0.00033504163337749054
+        },
+        {
+          "epsilon": 0.01,
+          "observed": 0.0646,
+          "limiting_mass": 0.06376856085851985,
+          "error": 0.0008314391414801503
+        },
+        {
+          "epsilon": 0.1,
+          "observed": 0.2057,
+          "limiting_mass": 0.20483276469913345,
+          "error": 0.0008672353008665479
+        },
+        {
+          "epsilon": 0.25,
+          "observed": 0.3351,
+          "limiting_mass": 0.3333333333333333,
+          "error": 0.0017666666666666941
+        },
+        {
+          "epsilon": 0.5,
+          "observed": 0.4987,
+          "limiting_mass": 0.5000000000000001,
+          "error": -0.0013000000000001344
+        },
+        {
+          "epsilon": 0.9,
+          "observed": 0.797,
+          "limiting_mass": 0.7951672353008666,
+          "error": 0.0018327646991334046
+        }
+      ],
+      "double_line_tubes": [
+        {
+          "delta": 0.01,
+          "observed": 0.0057,
+          "limiting_mass": 0.004501619094809442
+        },
+        {
+          "delta": 0.05,
+          "observed": 0.0227,
+          "limiting_mass": 0.0225125996910173
+        },
+        {
+          "delta": 0.1,
+          "observed": 0.0451,
+          "limiting_mass": 0.0450534136444121
+        },
+        {
+          "delta": 0.25,
+          "observed": 0.1129,
+          "limiting_mass": 0.11313408225732115
+        }
+      ],
+      "filling_tail": [
+        {
+          "threshold": 1,
+          "observed": 0.3351,
+          "limiting_tail": 0.3333333333333333
+        },
+        {
+          "threshold": 2,
+          "observed": 0.1603,
+          "limiting_tail": 0.16086124651033248
+        },
+        {
+          "threshold": 10,
+          "observed": 0.031,
+          "limiting_tail": 0.03184426647332069
+        },
+        {
+          "threshold": 100,
+          "observed": 0.0028,
+          "limiting_tail": 0.0031831121248990413
+        }
+      ],
+      "empirical_cost_mean": 8.427481857440567,
+      "truncated_cost_means": {
+        "2": 0.9784620425926234,
+        "10": 1.4913942809106382,
+        "100": 2.1935403357476613
+      },
+      "max_radius_recovery_error": 1.8189894035458565e-12,
+      "finite_diophantine_witnesses": [
+        {
+          "epsilon": 0.01,
+          "tau": 0.3233333333333333,
+          "finite_witnesses": 1499
+        },
+        {
+          "epsilon": 0.05,
+          "tau": 0.2833333333333333,
+          "finite_witnesses": 2052
+        },
+        {
+          "epsilon": 0.1,
+          "tau": 0.2333333333333333,
+          "finite_witnesses": 3033
+        }
+      ],
+      "smallest_fold_height_index": 355,
+      "smallest_fold_height": 9.086820394617026e-10
+    },
+    {
+      "sample": "primes",
+      "cutoff": 100000,
+      "sample_size": 9592,
+      "numerical_star_discrepancy": 0.008629564670955325,
+      "fold_cdf": [
+        {
+          "epsilon": 0.0001,
+          "observed": 0.004482902418682235,
+          "limiting_mass": 0.006366303831746142,
+          "error": -0.0018834014130639067
+        },
+        {
+          "epsilon": 0.001,
+          "observed": 0.021371976647206005,
+          "limiting_mass": 0.020135041633377492,
+          "error": 0.0012369350138285128
+        },
+        {
+          "epsilon": 0.01,
+          "observed": 0.06265638031693077,
+          "limiting_mass": 0.06376856085851985,
+          "error": -0.0011121805415890834
+        },
+        {
+          "epsilon": 0.1,
+          "observed": 0.20475396163469559,
+          "limiting_mass": 0.20483276469913345,
+          "error": -7.880306443786012e-05
+        },
+        {
+          "epsilon": 0.25,
+          "observed": 0.34059633027522934,
+          "limiting_mass": 0.3333333333333333,
+          "error": 0.007262996941896027
+        },
+        {
+          "epsilon": 0.5,
+          "observed": 0.5009382819015846,
+          "limiting_mass": 0.5000000000000001,
+          "error": 0.0009382819015845145
+        },
+        {
+          "epsilon": 0.9,
+          "observed": 0.7979566305254379,
+          "limiting_mass": 0.7951672353008666,
+          "error": 0.002789395224571223
+        }
+      ],
+      "double_line_tubes": [
+        {
+          "delta": 0.01,
+          "observed": 0.0052126772310258545,
+          "limiting_mass": 0.004501619094809442
+        },
+        {
+          "delta": 0.05,
+          "observed": 0.021267723102585488,
+          "limiting_mass": 0.0225125996910173
+        },
+        {
+          "delta": 0.1,
+          "observed": 0.04409924937447873,
+          "limiting_mass": 0.0450534136444121
+        },
+        {
+          "delta": 0.25,
+          "observed": 0.1152001668056714,
+          "limiting_mass": 0.11313408225732115
+        }
+      ],
+      "filling_tail": [
+        {
+          "threshold": 1,
+          "observed": 0.34059633027522934,
+          "limiting_tail": 0.3333333333333333
+        },
+        {
+          "threshold": 2,
+          "observed": 0.16117597998331942,
+          "limiting_tail": 0.16086124651033248
+        },
+        {
+          "threshold": 10,
+          "observed": 0.03054628857381151,
+          "limiting_tail": 0.03184426647332069
+        },
+        {
+          "threshold": 100,
+          "observed": 0.0017723102585487907,
+          "limiting_tail": 0.0031831121248990413
+        }
+      ],
+      "empirical_cost_mean": 2.564123468527651,
+      "truncated_cost_means": {
+        "2": 0.9813698516974848,
+        "10": 1.4956077963590868,
+        "100": 2.1340263010504845
+      },
+      "max_radius_recovery_error": 2.9103830456733704e-11,
+      "finite_diophantine_witnesses": [
+        {
+          "epsilon": 0.01,
+          "tau": 0.3233333333333333,
+          "finite_witnesses": 737
+        },
+        {
+          "epsilon": 0.05,
+          "tau": 0.2833333333333333,
+          "finite_witnesses": 1091
+        },
+        {
+          "epsilon": 0.1,
+          "tau": 0.2333333333333333,
+          "finite_witnesses": 1758
+        }
+      ],
+      "smallest_fold_height_index": 99733,
+      "smallest_fold_height": 1.4505553317241475e-07
+    },
+    {
+      "sample": "all_positive_integers_control",
+      "cutoff": 100000,
+      "sample_size": 100000,
+      "numerical_star_discrepancy": 9.04373648588086e-05,
+      "fold_cdf": [
+        {
+          "epsilon": 0.0001,
+          "observed": 0.00627,
+          "limiting_mass": 0.006366303831746142,
+          "error": -9.630383174614142e-05
+        },
+        {
+          "epsilon": 0.001,
+          "observed": 0.02013,
+          "limiting_mass": 0.020135041633377492,
+          "error": -5.041633377493582e-06
+        },
+        {
+          "epsilon": 0.01,
+          "observed": 0.06374,
+          "limiting_mass": 0.06376856085851985,
+          "error": -2.8560858519849353e-05
+        },
+        {
+          "epsilon": 0.1,
+          "observed": 0.20478,
+          "limiting_mass": 0.20483276469913345,
+          "error": -5.276469913345627e-05
+        },
+        {
+          "epsilon": 0.25,
+          "observed": 0.33327,
+          "limiting_mass": 0.3333333333333333,
+          "error": -6.333333333330415e-05
+        },
+        {
+          "epsilon": 0.5,
+          "observed": 0.50006,
+          "limiting_mass": 0.5000000000000001,
+          "error": 5.999999999983796e-05
+        },
+        {
+          "epsilon": 0.9,
+          "observed": 0.79511,
+          "limiting_mass": 0.7951672353008666,
+          "error": -5.723530086665374e-05
+        }
+      ],
+      "double_line_tubes": [
+        {
+          "delta": 0.01,
+          "observed": 0.00445,
+          "limiting_mass": 0.004501619094809442
+        },
+        {
+          "delta": 0.05,
+          "observed": 0.02249,
+          "limiting_mass": 0.0225125996910173
+        },
+        {
+          "delta": 0.1,
+          "observed": 0.04505,
+          "limiting_mass": 0.0450534136444121
+        },
+        {
+          "delta": 0.25,
+          "observed": 0.11313,
+          "limiting_mass": 0.11313408225732115
+        }
+      ],
+      "filling_tail": [
+        {
+          "threshold": 1,
+          "observed": 0.33327,
+          "limiting_tail": 0.3333333333333333
+        },
+        {
+          "threshold": 2,
+          "observed": 0.16089,
+          "limiting_tail": 0.16086124651033248
+        },
+        {
+          "threshold": 10,
+          "observed": 0.03187,
+          "limiting_tail": 0.03184426647332069
+        },
+        {
+          "threshold": 100,
+          "observed": 0.00319,
+          "limiting_tail": 0.0031831121248990413
+        }
+      ],
+      "empirical_cost_mean": 3.2840468070837727,
+      "truncated_cost_means": {
+        "2": 0.9785364707405146,
+        "10": 1.4924761081116658,
+        "100": 2.225898419949963
+      },
+      "max_radius_recovery_error": 2.9103830456733704e-11,
+      "finite_diophantine_witnesses": [
+        {
+          "epsilon": 0.01,
+          "tau": 0.3233333333333333,
+          "finite_witnesses": 7131
+        },
+        {
+          "epsilon": 0.05,
+          "tau": 0.2833333333333333,
+          "finite_witnesses": 10685
+        },
+        {
+          "epsilon": 0.1,
+          "tau": 0.2333333333333333,
+          "finite_witnesses": 17768
+        }
+      ],
+      "smallest_fold_height_index": 355,
+      "smallest_fold_height": 9.086820394617026e-10
+    },
+    {
+      "sample": "primes",
+      "cutoff": 1000000,
+      "sample_size": 78498,
+      "numerical_star_discrepancy": 0.003271226499885649,
+      "fold_cdf": [
+        {
+          "epsilon": 0.0001,
+          "observed": 0.006178501363092053,
+          "limiting_mass": 0.006366303831746142,
+          "error": -0.00018780246865408856
+        },
+        {
+          "epsilon": 0.001,
+          "observed": 0.019911335320645113,
+          "limiting_mass": 0.020135041633377492,
+          "error": -0.0002237063127323788
+        },
+        {
+          "epsilon": 0.01,
+          "observed": 0.06421819664195266,
+          "limiting_mass": 0.06376856085851985,
+          "error": 0.0004496357834328085
+        },
+        {
+          "epsilon": 0.1,
+          "observed": 0.20738107977273307,
+          "limiting_mass": 0.20483276469913345,
+          "error": 0.002548315073599622
+        },
+        {
+          "epsilon": 0.25,
+          "observed": 0.3378684807256236,
+          "limiting_mass": 0.3333333333333333,
+          "error": 0.004535147392290273
+        },
+        {
+          "epsilon": 0.5,
+          "observed": 0.49965604219215776,
+          "limiting_mass": 0.5000000000000001,
+          "error": -0.0003439578078423544
+        },
+        {
+          "epsilon": 0.9,
+          "observed": 0.7961731509083034,
+          "limiting_mass": 0.7951672353008666,
+          "error": 0.0010059156074367914
+        }
+      ],
+      "double_line_tubes": [
+        {
+          "delta": 0.01,
+          "observed": 0.004738974241381946,
+          "limiting_mass": 0.004501619094809442
+        },
+        {
+          "delta": 0.05,
+          "observed": 0.022612041071110093,
+          "limiting_mass": 0.0225125996910173
+        },
+        {
+          "delta": 0.1,
+          "observed": 0.045580779128130654,
+          "limiting_mass": 0.0450534136444121
+        },
+        {
+          "delta": 0.25,
+          "observed": 0.11470355932635226,
+          "limiting_mass": 0.11313408225732115
+        }
+      ],
+      "filling_tail": [
+        {
+          "threshold": 1,
+          "observed": 0.3378684807256236,
+          "limiting_tail": 0.3333333333333333
+        },
+        {
+          "threshold": 2,
+          "observed": 0.16346913297154067,
+          "limiting_tail": 0.16086124651033248
+        },
+        {
+          "threshold": 10,
+          "observed": 0.03196259777319167,
+          "limiting_tail": 0.03184426647332069
+        },
+        {
+          "threshold": 100,
+          "observed": 0.003121098626716604,
+          "limiting_tail": 0.0031831121248990413
+        }
+      ],
+      "empirical_cost_mean": 7.612435947421863,
+      "truncated_cost_means": {
+        "2": 0.9823851146845285,
+        "10": 1.500713107834108,
+        "100": 2.225227546877609
+      },
+      "max_radius_recovery_error": 2.3283064365386963e-10,
+      "finite_diophantine_witnesses": [
+        {
+          "epsilon": 0.01,
+          "tau": 0.3233333333333333,
+          "finite_witnesses": 2811
+        },
+        {
+          "epsilon": 0.05,
+          "tau": 0.2833333333333333,
+          "finite_witnesses": 4565
+        },
+        {
+          "epsilon": 0.1,
+          "tau": 0.2333333333333333,
+          "finite_witnesses": 8469
+        }
+      ],
+      "smallest_fold_height_index": 833719,
+      "smallest_fold_height": 5.349596227003905e-12
+    },
+    {
+      "sample": "all_positive_integers_control",
+      "cutoff": 1000000,
+      "sample_size": 1000000,
+      "numerical_star_discrepancy": 3.886241271722213e-05,
+      "fold_cdf": [
+        {
+          "epsilon": 0.0001,
+          "observed": 0.006359,
+          "limiting_mass": 0.006366303831746142,
+          "error": -7.303831746141749e-06
+        },
+        {
+          "epsilon": 0.001,
+          "observed": 0.020152,
+          "limiting_mass": 0.020135041633377492,
+          "error": 1.6958366622507604e-05
+        },
+        {
+          "epsilon": 0.01,
+          "observed": 0.063751,
+          "limiting_mass": 0.06376856085851985,
+          "error": -1.756085851985223e-05
+        },
+        {
+          "epsilon": 0.1,
+          "observed": 0.204813,
+          "limiting_mass": 0.20483276469913345,
+          "error": -1.9764699133451025e-05
+        },
+        {
+          "epsilon": 0.25,
+          "observed": 0.333324,
+          "limiting_mass": 0.3333333333333333,
+          "error": -9.33333333330566e-06
+        },
+        {
+          "epsilon": 0.5,
+          "observed": 0.500013,
+          "limiting_mass": 0.5000000000000001,
+          "error": 1.2999999999929734e-05
+        },
+        {
+          "epsilon": 0.9,
+          "observed": 0.79516,
+          "limiting_mass": 0.7951672353008666,
+          "error": -7.2353008666592444e-06
+        }
+      ],
+      "double_line_tubes": [
+        {
+          "delta": 0.01,
+          "observed": 0.004485,
+          "limiting_mass": 0.004501619094809442
+        },
+        {
+          "delta": 0.05,
+          "observed": 0.022512,
+          "limiting_mass": 0.0225125996910173
+        },
+        {
+          "delta": 0.1,
+          "observed": 0.045052,
+          "limiting_mass": 0.0450534136444121
+        },
+        {
+          "delta": 0.25,
+          "observed": 0.113153,
+          "limiting_mass": 0.11313408225732115
+        }
+      ],
+      "filling_tail": [
+        {
+          "threshold": 1,
+          "observed": 0.333324,
+          "limiting_tail": 0.3333333333333333
+        },
+        {
+          "threshold": 2,
+          "observed": 0.160875,
+          "limiting_tail": 0.16086124651033248
+        },
+        {
+          "threshold": 10,
+          "observed": 0.031864,
+          "limiting_tail": 0.03184426647332069
+        },
+        {
+          "threshold": 100,
+          "observed": 0.003198,
+          "limiting_tail": 0.0031831121248990413
+        }
+      ],
+      "empirical_cost_mean": 4.548831622294675,
+      "truncated_cost_means": {
+        "2": 0.9785351689316021,
+        "10": 1.4924504104567373,
+        "100": 2.225900258576773
+      },
+      "max_radius_recovery_error": 2.3283064365386963e-10,
+      "finite_diophantine_witnesses": [
+        {
+          "epsilon": 0.01,
+          "tau": 0.3233333333333333,
+          "finite_witnesses": 33834
+        },
+        {
+          "epsilon": 0.05,
+          "tau": 0.2833333333333333,
+          "finite_witnesses": 55598
+        },
+        {
+          "epsilon": 0.1,
+          "tau": 0.2333333333333333,
+          "finite_witnesses": 103855
+        }
+      ],
+      "smallest_fold_height_index": 833719,
+      "smallest_fold_height": 5.349596227003905e-12
+    }
+  ],
+  "high_precision_rows": [
+    {
+      "prime": 2,
+      "fold_height_80dps": "0.82682181043180595731958409154887519",
+      "filling_cost_80dps": "0.54987508514730823337834869851315645",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 3,
+      "fold_height_80dps": "0.019914856674816989727173851038537797",
+      "filling_cost_80dps": "3.5430836978685929591087661362306399",
+      "radius_error_80dps": "4.2169e-81"
+    },
+    {
+      "prime": 5,
+      "fold_height_80dps": "0.91953576453822622612943197391203242",
+      "filling_cost_80dps": "0.52141760638570290989155992795387992",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 7,
+      "fold_height_80dps": "0.43163139089608320287553556166413088",
+      "filling_cost_80dps": "0.7610505312818651756938202067930082",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 51109,
+      "fold_height_80dps": "0.99999999278765075374236773841164523",
+      "filling_cost_80dps": "0.50000000180308732131777968339138503",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 52529,
+      "fold_height_80dps": "0.9999999987289447253277541652471437",
+      "filling_cost_80dps": "0.50000000031776381897098299237259835",
+      "radius_error_80dps": "6.9089e-77"
+    },
+    {
+      "prime": 53239,
+      "fold_height_80dps": "0.99999999079540727038058666016767117",
+      "filling_cost_80dps": "0.50000000230114819829070232896587118",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 103993,
+      "fold_height_80dps": "0.00000000036593148732368298593773000799373632",
+      "filling_cost_80dps": "26137.865203033191995303547569771978",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 106123,
+      "fold_height_80dps": "0.000000026158787201488677580475080643790062",
+      "filling_cost_80dps": "3091.4427043924247899851984617076088",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 154747,
+      "fold_height_80dps": "0.99999998199056397248116769170875734",
+      "filling_cost_80dps": "0.50000000450235906769341887024916673",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 313399,
+      "fold_height_80dps": "0.00000000399290104016080177612323150567583",
+      "filling_cost_80dps": "7912.7187776293292867962838094080417",
+      "radius_error_80dps": "5.5271e-76"
+    },
+    {
+      "prime": 417037,
+      "fold_height_80dps": "0.00000000019364717888239118083972362720943282",
+      "filling_cost_80dps": "35930.595668016071212434926323085166",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 467081,
+      "fold_height_80dps": "0.99999997393619206828517821225479101",
+      "filling_cost_80dps": "0.50000000651595211030159894495275068",
+      "radius_error_80dps": "5.5271e-76"
+    },
+    {
+      "prime": 570719,
+      "fold_height_80dps": "0.99999995559852206914968365297803832",
+      "filling_cost_80dps": "0.50000001110036985236720072264197809",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 575689,
+      "fold_height_80dps": "0.99999995535046661567296219143702792",
+      "filling_cost_80dps": "0.50000001116238371987817925498745556",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 624313,
+      "fold_height_80dps": "0.0000000071625180795805227241436854677571319",
+      "filling_cost_80dps": "5907.9544562501132778367651586873878",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 626443,
+      "fold_height_80dps": "0.0000000092610710455730028688657338722213565",
+      "filling_cost_80dps": "5195.6441241370617465214071213809471",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 675067,
+      "fold_height_80dps": "0.99999996011928507630253339168776204",
+      "filling_cost_80dps": "0.50000000997017902913776834261096843",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 729371,
+      "fold_height_80dps": "0.00000000017763390468992285621148993479035164",
+      "filling_cost_80dps": "37515.183331100792008091747500510325",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 833009,
+      "fold_height_80dps": "0.0000000039189635908241091457011861817317424",
+      "filling_cost_80dps": "7987.0129758604046854353528485678891",
+      "radius_error_80dps": "1.1054e-75"
+    },
+    {
+      "prime": 833719,
+      "fold_height_80dps": "5.3495962270039052369873105312086248e-12",
+      "filling_cost_80dps": "216177.00834854176515992057445751955",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 835139,
+      "fold_height_80dps": "0.000000013986490485273151449706572370790904",
+      "filling_cost_80dps": "4227.8116118049985296105818389392178",
+      "radius_error_80dps": "1.1054e-75"
+    },
+    {
+      "prime": 883763,
+      "fold_height_80dps": "0.99999996843282747231022074772673193",
+      "filling_cost_80dps": "0.50000000789179331876364623928350206",
+      "radius_error_80dps": "1.1054e-75"
+    },
+    {
+      "prime": 885893,
+      "fold_height_80dps": "0.99999999998979459872020816058368759",
+      "filling_cost_80dps": "0.50000000000255135031996748801944357",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 936647,
+      "fold_height_80dps": "0.00000001251608611861810628670492490394501",
+      "filling_cost_80dps": "4469.2611569847892026004870590871506",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 939487,
+      "fold_height_80dps": "0.000000016713192032687455296139235577793745",
+      "filling_cost_80dps": "3867.5888786315601886694076187344817",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 988111,
+      "fold_height_80dps": "0.9999999722256068571303096051996243",
+      "filling_cost_80dps": "0.5000000069435984303580974067096929",
+      "radius_error_80dps": "0.0"
+    },
+    {
+      "prime": 992371,
+      "fold_height_80dps": "0.99999996194546116173618109422321176",
+      "filling_cost_80dps": "0.50000000951363498109369949833773151",
+      "radius_error_80dps": "2.2109e-75"
+    },
+    {
+      "prime": 999983,
+      "fold_height_80dps": "0.99380268410320114786829803288970361",
+      "filling_cost_80dps": "0.50155656762821922093849613561258443",
+      "radius_error_80dps": "0.0"
+    }
+  ],
+  "source_sha256": "0362285605f24b84ef947d8dff5fd46c210e09073a0dec051ffa5cc1d82557ed"
+}

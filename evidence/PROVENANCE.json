@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-14",
+  "description": "Byte-identical export of completed proof sources, build pins, arithmetic results, claim ledger, and numerical verifier. Historical private snapshots are retained separately and are not redistributed.",
+  "exported_source_sha256": {
+    "PrimeSphericalFold.lean": "4f0e6160facd1ac6ec21624c612aa5bed91e1763a5a672247a1b3f78ad1ad213",
+    "PrimeSphericalFoldAudit.lean": "3c9b704a8bbbde00e9f5d3f17732517814e8c1ffb8451bfcb032b0694bc010c2",
+    "PrimeSphericalFoldComplete.lean": "bf790b5c946fd052c6dc9af54c79d919b368195a3c3ed3385d315c2143a5ddfb",
+    "PrimeSphericalFoldGeometry.lean": "f0c905ddced4b6478bb05fd777b212a81c7f90d1ddce08eaf8c87a2c05ae52b4",
+    "PrimeSphericalFoldImmersion.lean": "188380e9b262671f590e5940223c1d854e9666c00e93796dbf14627869103caf",
+    "PrimeSphericalFoldNormalForm.lean": "bce3f701b085274d6bf7e14f6ace5dd48584b96ffeca57a1705a20cfdd0160f3",
+    "PrimeSphericalFoldSmooth.lean": "37fd03f876d08977c9874360d89662d7b841d88a4b35ee4d088acb1f64a83a3e",
+    "lakefile.toml": "6a7a6859d1ce8d549f73ffc3fb99be9f5d4e2b52e4f1db872e6775ec0a65c054",
+    "lake-manifest.json": "67a3c6e0017199238bd07ef74c5a5416182fd373a3bed8fb8a9d96207a0ab614",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "arithmetic/PrimeSampling.lean": "b5355831b9803f7fa702d9ac061f51247a89e90ac7d1a45deb1a4ce48c2b439f",
+    "arithmetic/RESULTS.md": "cb81fe1c28750d2376a53c5ac7ffaf826d69946db2c7079f167339929b13f9c8",
+    "arithmetic/CLAIM_LEDGER.md": "71f4fe30583fc11298803062b39cff208a48df78fbc4832f999183ffe989b5a9",
+    "arithmetic/verify_prime_sampling.py": "0362285605f24b84ef947d8dff5fd46c210e09073a0dec051ffa5cc1d82557ed"
+  },
+  "external_reference_sha256": [
+    {
+      "url": "https://users.utu.fi/ksmato/wp-content/uploads/sites/1432/2025/04/alphapmod1.pdf",
+      "sha256": "7c9703d1830506044a489d18b2d48fb7409897b07de0f09a0bce4b012594d416",
+      "pinpoint": "Theorem 1, printed p.267; homogeneous beta=0",
+      "role": "Published infinite prime approximation input; not formalized in this project"
+    },
+    {
+      "url": "https://www.math.purdue.edu/~twooley/publ/20240627welldist.pdf",
+      "sha256": "94714c18937fcef5e43d4ff4eb0f8133c680813342328ce40b5ec46be3afee50",
+      "pinpoint": "Introduction, p.1, the paragraph recalling Vinogradov; Theorem 1.1 distinguishes well-distribution",
+      "role": "Primary research source recalling prime equidistribution; no claim of well-distribution for our frequency"
+    }
+  ]
+}
